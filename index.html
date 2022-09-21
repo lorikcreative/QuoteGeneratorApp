@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Quote Generator</title>
+	<link rel="stylesheet" type="text/css" href="quotestyles.css">
+</head>
+<!-- Quote Generator Functionality -->
+	<script>
+		const quotes_array = [
+			'abovetheclouds.jpg',
+			'belknapsunset.jpg',
+			'blossomandcloudart.jpg',
+			'clackamasriversunset.jpg',
+			'crossparknightprettystar.jpg',
+			'crossparksunset.jpg',
+			'meldrumbarsunset.jpg',
+			'molallarivercorridorhikebridge',
+			'olallielake.jpg',
+			'prettysnowytimberlinetrees.jpg',
+			'timberlinesunset.jpg'
+		]
+		function newPic() {
+			//random index
+			let randomNumber = Math.floor(Math.random() * (quotes_array.length));
+			
+			//picture quote at the random index
+			let pictureQuote = quotes_array[randomNumber];
+			
+			//display picture quote
+			document.getElementById('quote-space').src = './images/${pictureQuote}';
+		};
+		
+	</script>
+<body>
+	<h1>Inspiration On Demand!</h1>
+	<div class="container">
+		<p id="quote-space">
+			<img src="images/upper_TL.jpg" alt="Upper Twin Lake" height="550" width="350">
+		</p>
+	</div>
+	<br>
+	<button onClick="newPic();">Click Me to be inspired!</button>
+</body>
+</html>
