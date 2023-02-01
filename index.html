@@ -3,11 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <title>Quote Generator</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="quotestyles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
 </head>
 <!-- Quote Generator Functionality -->
 	<script>
-		//picture quotes that will be displayed
+		//sets up the picture quotes to pull from
 		const quotes_array = [
 			'abovetheclouds.jpg',
 			'belknapsunset.jpg',
@@ -16,10 +18,17 @@
 			'crossparknightprettystar.jpg',
 			'crossparksunset.jpg',
 			'meldrumbarsunset.jpg',
-			'molallarivercorridorhikebridge',
+			'molallarivercorridorhikebridge.jpg',
 			'olallielake.jpg',
 			'prettysnowytimberlinetrees.jpg',
-			'timberlinesunset.jpg'
+			'timberlinesunset.jpg',
+			'bachelorcirquequote.jpg',
+			'contrastreesquote.jpg',
+			'eveningofcalmquote.jpg',
+			'northforkontrastreesquote.jpg',
+			'pineappleroadsteezequote.jpg',
+			'skyofportlandiaquote.jpg',
+			'skyofagatesquote.jpg'
 		]
 		function newPic() {
 			//random index
@@ -29,23 +38,20 @@
 			let pictureQuote = quotes_array[randomNumber];
 			
 			//display picture quote
-			document.getElementById('quote-space').src = './images/${pictureQuote}';
+			document.getElementById("quote-space").src = `./images/${pictureQuote}`;
 		};
 		
 	</script>
 <body>
 	<!--Title-->
-	<h1>Inspiration On Demand!</h1>
-	
-	<!--Container where picture quotes will be displayed-->
+	<h1>Quote Generator</h1>
+	<!--holds the space where the picture quotes are generated-->
 	<div class="container">
-	
-		<!--Actual picture quotes-->
-		<p id="quote-space">
-			<img src="images/upper_TL.jpg" alt="Upper Twin Lake" height="550" width="350">
-		</p>
+	<!--Picture quotes-->
+			<img src="images/upper_TL_edit.jpg" id="quote-space" alt="Upper Twin Lake" height="550" width="350">
 	</div>
 	<br>
-	<button onClick="newPic();">Click Me to be inspired!</button>
+	<!--Button to be clicked to display the picture quotes-->
+	<button onClick="newPic();">Click Me for a pick-me-up!</button>
 </body>
 </html>

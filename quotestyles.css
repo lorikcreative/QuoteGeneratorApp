@@ -1,51 +1,61 @@
 @charset "UTF-8";
 
 body {
-	background-color: #01452D;
+	background-image: url("images/meadows_sunset.jpg");
+	background-size: cover;
 }
 
 h1 {
-	color: #C7FDC2;
-	font-family: helvetica Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-	font-size: 2.75em;
+	color: #120556;
+	font-family: Oswald;
+	font-weight: bold;
+	font-size: 5vw;
+	margin-bottom: inherit;
+	margin-top: inherit; 
 	text-align: center; 
 }
 
 
 
 .container {
-	height: 600px;
-	width: 50%;
-	background-color: #C7FDC2;
+	height: 70vw;
+	width: 70vw;
+	background-image: radial-gradient(ellipse, rgba(255,255,255,0.75), rgba(0,5,84,0.80));
 	display: block; 
 	margin-left: auto;
 	margin-right: auto;
 	padding: 30px;
 	border-radius: 20px;
-	border: solid 10px #74F768;
+	border: solid 10px #120556;
+	box-shadow: 2.5px 5px #120556;
+	
 }
 
 #quote-space {
-	display: flex;
-	justify-content: center; 
-}
-
-img {
-	border: solid 10px #74F768;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50vw;
+	height: 64.9vw;
+	border: solid 10px #FFFFFF;
+	border-radius: 15px;
+	box-shadow: 2.5px 5px #FFFFFF;
 }
 
 button {
-	background-color: #74F768;
-	color: #01452D;
+	background-color: #FFFFFF;
+	color: #120556;
 	font-weight: bolder;
-	font-size: 20px;
-	border: solid thick #C7FDC2;
+	font-size: 2vw;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	border: solid thick #00ADFF;
 	display: block; 
 	margin-left: auto; 
 	margin-right: auto; 
 	width: 50%;
-	height: 40px;
+	height: 40%;
 	border-radius: 10px;
-	box-shadow: 2.5px 5px #74F768;
+	box-shadow: 2.5px 5px #0086FA;
+	margin-top: 15px;
 }
 
